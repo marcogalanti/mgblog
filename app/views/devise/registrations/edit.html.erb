@@ -5,7 +5,7 @@
     <br />
     <%= image_tag "marcogalanti.jpg",:size => "70x70", :alt => "marcogalanti" , :id => "logo", :class => "img-rounded"%>
   </div>
-  <h3 align="center">Modifica utente '<%= current_user.nomecompleto%>'</h3>
+  <h3 align="center">Modifica utente '<%= current_user.full_name%>'</h3>
   <div class="login" class="col-sm-6 col-sm-offset-3" align="center">
     <%= bootstrap_form_for(resource, :as => resource_name, :url => user_registration_path(), :html => { :method => :put }) do |f| %>
     <%= devise_error_messages! %>

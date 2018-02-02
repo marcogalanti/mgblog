@@ -33,7 +33,7 @@
           <div id="devise"><%= f.check_box :remember_me, label: "ricordami su questo computer" %></div>
         <% end -%>
 
-        <div id="devise"><%= f.submit "Accedi" , :class => "btn btn-success btn-block", id: "devise_button" %></div>
+        <div id="devise"><%= f.button "Sign in" , :class => "btn btn-success btn-block", id: "devise_button", method: 'post', data: {disable_with: "<i class='fa fa-spinner'></i>Signing in..."}%></div>
         <br/>
       <% end %>
 

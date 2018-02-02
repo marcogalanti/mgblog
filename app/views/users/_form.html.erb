@@ -1,0 +1,49 @@
+<% if current_user.group == "admin" %>
+  <%= bootstrap_form_for @user, html: {class: 'form-horizontal' } do |f| %>
+    <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@user.errors.count, "error") %> Non e' stato possile salvare le modifiche per questo utente</h2>
+        <ul>
+          <% @user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="container-fluid">
+      <div class="row col-sm-4">
+        <% if params[:action] == "edit" %>
+          <div id="field" style="margin: 30px 0px 15px 15px;">
+          <%if current_user.group == "admin" %>
+            <%=f.select :group, @groups, :label => "Seleziona il ruolo", prompt: "Seleziona il ruolo", style: "margin-right: 15px;" %>
+          <%end%>
+          </div><!-- field -->
+        <% elsif params[:action] == "new" %>
+          <div id="field" style="margin: 0px 0px 15px 15px;">
+            <div style="margin-left: -15px;">
+              <%= f.email_field :email, :autofocus => true, label: "Email" %>
+              <%= f.text_field :first_name, :autofocus => true, label: "Nome" %>
+              <%= f.text_field :middle_name, :autofocus => true, label: "Secondo nome" %>
+              <%= f.text_field :last_name, :autofocus => true, label: "Cognome" %>
+              <%#= f.select :country_id, Country.all.map {|c| [ c.name.humanize, c.id]}%>
+              <%#= f.select :group, ['manager','presenter'],:prompt=>"Select your group" %>
+              <%= f.password_field :password, label: "Password" %>
+              <%= f.password_field :password_confirmation, label: "Conferma password" %>
+              <%=f.select :group, @groups, :label => "Seleziona il gruppo", prompt: "Seleziona il gruppo", style: "margin-right: 15px;" %>
+            </div>
+          </div><!-- field -->
+        <%end%>
+      </div><!-- row -->
+    </div><!-- container-fluid -->
+    <br/>
+
+    <div class="form-actions" style="margin-left: -15px;">
+      <%= f.submit :class => 'btn btn-success', value: "Salva", style: "margin-left: 15px;"%>
+      <%= link_to 'Lista degli utenti', users_path , :class => 'btn btn-success' %>
+      <%= link_to 'Menu Principale', root_path , :class => 'btn btn-success' %>
+    </div>
+  <% end %>
+<% else %>
+  <h5 class="alert">Utente non autorizzato!</h5>
+<% end %>

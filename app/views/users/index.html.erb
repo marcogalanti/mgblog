@@ -1,0 +1,47 @@
+<h3 id="h3-form">Lista degli utenti</h1>
+
+<% @page_title="index" %>
+
+<br/>
+
+<table id="table-form", style: "margin-left: 15px;">
+  <thead id="AdminTable">
+    <tr id="AdminTable">
+      <th id="AdminTable"><%=sortable 'email','Email'%></th>
+      <th id="AdminTable"><%=sortable 'last_name','Nome'%></th>
+      <th id="AdminTable"><%=sortable 'group','Ruolo'%></th>
+      <th id="AdminTable"><%=sortable 'admin','Admin?'%></th>
+      <th id="AdminTableTool">Utente</th>
+    </tr>
+  </thead>
+
+  <tbody id="AdminTable">
+    <%= will_paginate @users %>
+    <% if @users %>
+      <% @users.each do |user| %>
+        <tr id="AdminTable" class="<%= cycle("odd","even")%>">
+          <td id="AdminTable"><%= user.email if user.email %></td>
+          <td id="AdminTable"><%= user.full_name if user.full_name%></td>
+          <td id="AdminTable"><%= user.group if user.group %></td>
+          <%# if user.approved.class.to_s == "TrueClass" %>
+            <!--td id="AdminTable"><%#= image_tag "true.png", size: "15x15", alt: "yes" %></td>-->
+          <%# else %>
+            <!--td id="AdminTable"><%#= image_tag "false.png", size: "15x15", alt: "no" %></td>-->
+          <%# end %>
+          <% if user.group == "admin" %>
+            <td id="AdminTable"><%= image_tag "true.png", size: "15x15", alt: "yes" %></td>
+          <% else %>
+            <td id="AdminTable"><%= image_tag "false.png", size: "15x15", alt: "no" %></td>
+          <% end %>
+          <td id="AdminTable"><%= link_to raw("<span class=\'glyphicon glyphicon-pencil\'"), edit_user_path(user), class: "btn btn-info btn-sm", "data-toggle": "tooltip",title: "Modifica utente #{user.email}","data-placement":"bottom" %></td>
+        </tr>
+      <% end %>
+    <% else%>
+      <p>no locations listed</p>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'Aggiungi utente', '/users/new' , :class => 'btn btn-success', id: "button-form" if current_user.group == "admin"%>
+<%= link_to 'Pagina iniziale', root_path , :class => 'btn btn-success', id: "button-form" %>

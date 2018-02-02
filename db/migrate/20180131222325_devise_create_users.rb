@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class DeviseCreateUsers < ActiveRecord::Migration[5.1]
-  def change
+  def up
     create_table :users do |t|
       ## Database authenticatable
       t.string :first_name,              null: false, default: ""
@@ -44,5 +44,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.1]
     add_index :users, :reset_password_token, unique: true
     add_index :users, :confirmation_token,   unique: true
     add_index :users, :unlock_token,         unique: true
+  end
+  def down
+    drop_table :users
   end
 end

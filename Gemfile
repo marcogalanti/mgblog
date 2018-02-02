@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'better_errors'
+  gem 'binding_of_caller'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
@@ -76,7 +78,6 @@ gem 'switchery-rails'
 gem 'garlicjs-rails'
 gem 'axlsx'
 gem 'sms-easy'
-gem 'font-awesome-rails'
 gem 'montrose'
 gem 'restforce'
 gem 'browser'
@@ -84,3 +85,5 @@ gem 'browser'
 gem 'bootstrap', '~> 4.0.0'
 gem 'bootstrap_form'
 gem 'rubyzip', '~>0.9.8'
+gem 'cancancan', '~> 2.1', '>= 2.1.3'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
