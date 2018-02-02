@@ -1,0 +1,16 @@
+<% page_title("login")%>
+<div class="loginbox">
+  <h2 align="center">Resend unlock instructions  <%= image_tag "marcogalanti.jpg",:size => "35x35", :alt => "marcogalanti" , :id => "logo", :class => "img-rounded"%></h2>
+  <div class="login">
+
+<%= bootstrap_form_for(resource, :as => resource_name, :url => unlock_path(), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <%= f.email :email, :autofocus => true, id: "devise_field" %></div>
+
+  <div><%= f.submit "Resend unlock instructions", id: "devise_button" %></div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+  </div> <!-- close login box -->
+</div> <!-- close loginbox box -->

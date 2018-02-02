@@ -53,8 +53,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Env Variables read securely
 gem 'figaro'
+# App server running this app at startup
 gem 'unicorn'
+
 gem 'awesome_print', require: false
 gem 'seed_dump'
 gem 'i18n'
@@ -62,11 +65,9 @@ gem 'rb-readline'
 gem 'devise'
 gem 'paperclip'
 gem 'exception_notification'
-gem 'bootstrap_form'
 gem 'therubyracer'
 gem 'will_paginate'
 gem 'less-rails'
-gem 'twitter-bootstrap-rails'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
 gem 'gon'
@@ -78,4 +79,8 @@ gem 'sms-easy'
 gem 'font-awesome-rails'
 gem 'montrose'
 gem 'restforce'
+gem 'browser'
+# Bootstrap stuff
+gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap_form'
 gem 'rubyzip', '~>0.9.8'

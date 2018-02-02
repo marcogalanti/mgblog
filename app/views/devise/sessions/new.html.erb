@@ -1,0 +1,43 @@
+<% page_title("login")%>
+<% if browser.ie? %>
+<table id="AdminTable" class="table">
+  <thead id="AdminTable">
+    <tr id="AdminTable">
+<th id="AdminTableTool">
+    <p id="navbar"><%= image_tag "marcogalanti.jpg",:size => "70x70", :alt => "marcogalanti" , :id => "logo", :class => "img-rounded"%></p>
+    <h2>BROWSER NON SUPPORTATO</h2>
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <td id="AdminTable"><h3> Stai utilizzando Internet Explorer! L'applicazione funziona correttamente con uno di questi browser: Firefox, Chrome, Opera o Safari</h3></td>
+
+  </tbody>
+</table>
+<%else%>
+<div id="loginbox" class="container col-sm-4 col-sm-offset-4">
+  <div class="login" class="container col-sm-6 col-sm-offset-3" align="center">
+  <br />
+  <%= image_tag "marcogalanti.jpg",:size => "70x70", :alt => "marcogalanti" , :id => "logo", :class => "img-rounded"%>
+  </div>
+  <h3 align="center">MG Blog</h3>
+  <h3 align="center">Login:</h3>
+  <div class="login" class="container col-sm-6 col-sm-offset-3" align="center">
+      <%= bootstrap_form_for(resource, :as => resource_name, :url => user_session_path()) do |f| %>
+
+        <div id="devise" align="center"><%= f.email_field :email, :autofocus => true, id: "devise_field" %></div>
+
+        <div id="devise" align="center"><%= f.password_field :password, id: "devise_field" %></div>
+
+        <% if devise_mapping.rememberable? -%>
+          <div id="devise"><%= f.check_box :remember_me, label: "ricordami su questo computer" %></div>
+        <% end -%>
+
+        <div id="devise"><%= f.submit "Accedi" , :class => "btn btn-success btn-block", id: "devise_button" %></div>
+        <br/>
+      <% end %>
+
+      <%= render "devise/shared/links" %>
+  </div> <!-- close login box -->
+</div> <!-- close loginbox box -->
+<% end %>

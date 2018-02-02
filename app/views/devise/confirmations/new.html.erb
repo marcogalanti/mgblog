@@ -1,0 +1,17 @@
+<% page_title("login")%>
+<div id="loginbox" class="col-sm-4 col-offset-sm-4">
+  <h2 align="center">Resend confirmation instructions<%= image_tag "marcogalanti.jpg",:size => "35x35", :alt => "marcogalanti" , :id => "logo", :class => "img-rounded"%></h2>
+  <div id="login" class="col-sm-6 col-sm-offset-3" align="center">
+
+  <%= bootstrap_form_for(resource, :as => resource_name, :url => user_confirmation_path(), :html => { :method => :post }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div id="devise"><br />
+    <%= f.email :email, :autofocus => true %></div>
+
+    <div id="devise"><%= f.submit "Resend confirmation instructions", class: "btn btn-success btn-block"%></div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+  </div> <!-- close login box -->
+</div> <!-- close loginbox box -->

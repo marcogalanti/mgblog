@@ -1,0 +1,7 @@
+<p>Ciao <%= @resource.email %>!</p>
+
+<p>Il tuo utente e' stato bloccato a causa di un alto numero di tentativi di connessione falliti.</p>
+
+<p>Utilizza il link sotto per sbloccare il tuo utente:</p>
+
+<p><%= link_to 'Sblocca il mio utente', unlock_url(@resource, :unlock_token => @token) %></p>

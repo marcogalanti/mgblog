@@ -1,0 +1,33 @@
+<% page_title("login")%>
+<div id="loginbox" class="container col-sm-4 col-sm-offset-4">
+
+  <div class="login" class="container col-sm-6 col-sm-offset-3" align="center">
+    <br />
+    <%= image_tag "marcogalanti.jpg",:size => "70x70", :alt => "marcogalanti" , :id => "logo", :class => "img-rounded"%>
+  </div>
+  <h3 align="center">Modifica utente '<%= current_user.nomecompleto%>'</h3>
+  <div class="login" class="col-sm-6 col-sm-offset-3" align="center">
+    <%= bootstrap_form_for(resource, :as => resource_name, :url => user_registration_path(), :html => { :method => :put }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div id="devise"><%= f.email_field :email, :autofocus => true, id: "devise_field" %></div>
+      <!--div id="devise"><%#= f.select :area_id, User.all.map {|a| [ a.area.nome.humanize, a.id]}%></div>-->
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %>
+        </div>
+      <% end %>
+
+    <div id="devise"><i>(lasciare in bianco se non si desidera modificare)</i>
+      <%= f.password_field :password, :autocomplete => "off", id: "devise_field" %>
+    </div>
+
+    <div id="devise"><%= f.password_field :password_confirmation, id: "devise_field", label: "Confermare Password" %></div>
+
+  <div id="devise"><i>(e' necessario specificare l'attuale password per modificare)</i>
+  <%= f.password_field :current_password, id: "devise_field", label: "Password attuale" %></div>
+
+  <div id="devise_field"><%= f.submit "Salva",:class => "btn btn-success", id: "devise" %>
+<%= link_to "Indietro", :back , :class => "btn btn-default" %> </div>
+<% end %>
+  </div> <!-- close login box -->
+</div> <!-- close loginbox box -->

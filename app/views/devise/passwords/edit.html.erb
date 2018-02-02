@@ -1,0 +1,22 @@
+<% page_title("login")%>
+<div id="loginbox" class="col-sm-4 col-offset-sm-4">
+  <h2 align="center">Change your password  <%= image_tag "marcogalanti.jpg",:size => "35x35", :alt => "marcogalanti" , :id => "logo", :class => "img-rounded"%></h2>
+  <div id="login" class="col-sm-6 col-offset-sm-3" align="center">
+
+<%= bootstrap_form_for(resource, :as => resource_name, :url => user_password_path(), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+  <%= f.hidden_field :reset_password_token %>
+
+  <div id="devise"><%= f.label :password, "New password", id: "devise_field" %><br />
+  <%= f.password_field :password, :autofocus => true %></div>
+
+  <div id="devise"><%= f.label :password_confirmation, "Confirm new password", id: "devise_field" %><br />
+  <%= f.password_field :password_confirmation, id: "devise_field" %></div>
+
+<div id="devise"><%= f.submit "Change my password" , :class => "btn btn-success btn-block", id: "devise_button" %></div>
+<br/>
+<% end %>
+
+<%= render "devise/shared/links" %>
+  </div> <!-- close login box -->
+</div> <!-- close loginbox box -->

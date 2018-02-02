@@ -1,0 +1,1058 @@
+I, [2018-01-31T15:46:40.528205 #24825]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+I, [2018-01-31T15:46:41.839116 #24825]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=10
+I, [2018-01-31T15:46:41.841998 #24854]  INFO -- : worker=0 ready
+I, [2018-01-31T15:46:41.844020 #24856]  INFO -- : worker=1 ready
+I, [2018-01-31T15:46:41.845333 #24825]  INFO -- : master process ready
+I, [2018-01-31T15:46:41.846487 #24859]  INFO -- : worker=2 ready
+I, [2018-01-31T15:46:41.847505 #24862]  INFO -- : worker=3 ready
+I, [2018-01-31T15:47:13.457576 #24825]  INFO -- : reaped #<Process::Status: pid 24854 exit 0> worker=0
+I, [2018-01-31T15:47:13.457705 #24825]  INFO -- : reaped #<Process::Status: pid 24856 exit 0> worker=1
+I, [2018-01-31T15:47:13.457746 #24825]  INFO -- : reaped #<Process::Status: pid 24859 exit 0> worker=2
+I, [2018-01-31T15:47:13.457868 #24825]  INFO -- : reaped #<Process::Status: pid 24862 exit 0> worker=3
+I, [2018-01-31T15:47:13.458094 #24825]  INFO -- : master complete
+I, [2018-01-31T15:47:54.952914 #24999]  INFO -- : Refreshing Gem list
+I, [2018-01-31T15:47:56.995968 #24999]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T15:47:56.996154 #24999]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T15:47:56.999239 #25002]  INFO -- : worker=0 ready
+I, [2018-01-31T15:47:57.001932 #25004]  INFO -- : worker=1 ready
+I, [2018-01-31T15:47:57.003393 #24999]  INFO -- : master process ready
+I, [2018-01-31T15:47:57.015527 #25007]  INFO -- : worker=2 ready
+I, [2018-01-31T15:47:57.016790 #25010]  INFO -- : worker=3 ready
+E, [2018-01-31T15:49:03.354574 #25010] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T15:49:03.354847 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T15:49:03.355259 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T15:49:03.355296 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T15:49:03.355325 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T15:49:03.355356 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T15:49:03.355381 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T15:49:03.355404 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T15:49:03.355428 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T15:49:03.355453 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T15:49:03.355476 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T15:49:03.355513 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T15:49:03.355542 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T15:49:03.355566 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T15:49:03.355605 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T15:49:03.355631 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T15:49:03.355653 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T15:49:03.355698 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T15:49:03.355736 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T15:49:03.355769 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T15:49:03.355785 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T15:49:03.355807 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T15:49:03.355831 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T15:49:03.356074 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T15:49:03.356107 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T15:49:03.356132 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T15:49:03.356157 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T15:49:03.356180 #25010] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-01-31T15:49:40.708582 #25007] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T15:49:40.708904 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T15:49:40.709298 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T15:49:40.709339 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T15:49:40.709363 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T15:49:40.709385 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T15:49:40.709406 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T15:49:40.709427 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T15:49:40.709450 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T15:49:40.709472 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T15:49:40.709493 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T15:49:40.709541 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T15:49:40.709572 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T15:49:40.709595 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T15:49:40.709617 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T15:49:40.709638 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T15:49:40.709657 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T15:49:40.709692 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T15:49:40.709721 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T15:49:40.709743 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T15:49:40.709764 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T15:49:40.709800 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T15:49:40.709825 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T15:49:40.710051 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T15:49:40.710091 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T15:49:40.711464 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T15:49:40.711501 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T15:49:40.711525 #25007] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-01-31T15:51:34.602190 #25002] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T15:51:34.602469 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T15:51:34.602784 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T15:51:34.602804 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T15:51:34.602816 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T15:51:34.602827 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T15:51:34.602838 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T15:51:34.602849 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T15:51:34.602860 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T15:51:34.602881 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T15:51:34.602892 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T15:51:34.602903 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T15:51:34.602913 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T15:51:34.602923 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T15:51:34.602934 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T15:51:34.602959 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T15:51:34.602975 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T15:51:34.602986 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T15:51:34.602996 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T15:51:34.603021 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T15:51:34.603036 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T15:51:34.603047 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T15:51:34.603058 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T15:51:34.603233 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T15:51:34.603250 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T15:51:34.603261 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T15:51:34.603272 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T15:51:34.603282 #25002] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+Unicorn master intercepting TERM and sending myself QUIT instead
+E, [2018-01-31T15:53:08.649311 #24999] ERROR -- : master loop error: undefined method `Process' for "KILL":String (NoMethodError)
+E, [2018-01-31T15:53:08.649522 #24999] ERROR -- : /home/dev/mgblog/config/unicorn.rb:14:in `block (2 levels) in reload'
+E, [2018-01-31T15:53:08.649656 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:383:in `kgio_wait_readable'
+E, [2018-01-31T15:53:08.649675 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:383:in `master_sleep'
+E, [2018-01-31T15:53:08.649688 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:294:in `join'
+E, [2018-01-31T15:53:08.649699 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T15:53:08.649709 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T15:53:08.649733 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T15:53:08.649746 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T15:53:08.649758 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T15:53:08.649768 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T15:53:08.649778 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T15:53:08.649789 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T15:53:08.649799 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T15:53:08.649810 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T15:53:08.649821 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T15:53:08.650059 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T15:53:08.650078 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T15:53:08.650089 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T15:53:08.650099 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T15:53:08.650407 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T15:53:08.650434 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T15:53:08.650446 #24999] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-01-31T15:53:30.491897 #24999] ERROR -- : reaped #<Process::Status: pid 25010 SIGKILL (signal 9)> worker=3
+I, [2018-01-31T15:53:30.511939 #25144]  INFO -- : worker=3 ready
+I, [2018-01-31T15:53:40.152627 #25311]  INFO -- : Refreshing Gem list
+I, [2018-01-31T15:53:41.819112 #25311]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T15:53:41.819318 #25311]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T15:53:41.822228 #25314]  INFO -- : worker=0 ready
+I, [2018-01-31T15:53:41.824367 #25316]  INFO -- : worker=1 ready
+I, [2018-01-31T15:53:41.825367 #25311]  INFO -- : master process ready
+I, [2018-01-31T15:53:41.831186 #25319]  INFO -- : worker=2 ready
+I, [2018-01-31T15:53:41.832235 #25322]  INFO -- : worker=3 ready
+E, [2018-01-31T15:53:47.848945 #25322] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T15:53:47.849237 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T15:53:47.849290 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T15:53:47.849322 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T15:53:47.849360 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T15:53:47.849471 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T15:53:47.849508 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T15:53:47.849629 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T15:53:47.849666 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T15:53:47.849692 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T15:53:47.849718 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T15:53:47.849742 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T15:53:47.849761 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T15:53:47.849972 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T15:53:47.849999 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T15:53:47.850024 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T15:53:47.850038 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T15:53:47.850050 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T15:53:47.850062 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T15:53:47.850087 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T15:53:47.850806 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T15:53:47.850839 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T15:53:47.850868 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T15:53:47.850895 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T15:53:47.850928 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T15:53:47.850962 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T15:53:47.851056 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T15:53:47.851086 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-01-31T15:54:13.676740 #25322] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T15:54:13.677000 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T15:54:13.677078 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T15:54:13.677248 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T15:54:13.677264 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T15:54:13.677276 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T15:54:13.677289 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T15:54:13.677301 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T15:54:13.677313 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T15:54:13.677325 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T15:54:13.677471 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T15:54:13.677495 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T15:54:13.677520 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T15:54:13.677550 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T15:54:13.677578 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T15:54:13.677601 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T15:54:13.677614 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T15:54:13.677626 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T15:54:13.677638 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T15:54:13.677653 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T15:54:13.677810 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T15:54:13.677826 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T15:54:13.677838 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T15:54:13.677850 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T15:54:13.677862 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T15:54:13.677875 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T15:54:13.677887 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T15:54:13.677898 #25322] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-01-31T15:58:40.134861 #25311]  INFO -- : reaped #<Process::Status: pid 25314 exit 0> worker=0
+I, [2018-01-31T15:58:40.135010 #25311]  INFO -- : reaped #<Process::Status: pid 25316 exit 0> worker=1
+I, [2018-01-31T15:58:40.135056 #25311]  INFO -- : reaped #<Process::Status: pid 25319 exit 0> worker=2
+I, [2018-01-31T15:58:40.135109 #25311]  INFO -- : reaped #<Process::Status: pid 25322 exit 0> worker=3
+I, [2018-01-31T15:58:40.135191 #25311]  INFO -- : master complete
+I, [2018-01-31T15:58:58.461034 #25654]  INFO -- : Refreshing Gem list
+I, [2018-01-31T15:59:00.264562 #25654]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T15:59:00.264802 #25654]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T15:59:00.267353 #25657]  INFO -- : worker=0 ready
+I, [2018-01-31T15:59:00.270824 #25660]  INFO -- : worker=1 ready
+I, [2018-01-31T15:59:00.272333 #25654]  INFO -- : master process ready
+I, [2018-01-31T15:59:00.279209 #25662]  INFO -- : worker=2 ready
+I, [2018-01-31T15:59:00.280659 #25665]  INFO -- : worker=3 ready
+E, [2018-01-31T15:59:07.915093 #25665] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T15:59:07.915354 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T15:59:07.915386 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T15:59:07.915401 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T15:59:07.915431 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T15:59:07.915456 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T15:59:07.915479 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T15:59:07.915494 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T15:59:07.915505 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T15:59:07.915517 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T15:59:07.915534 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T15:59:07.915556 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T15:59:07.915993 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T15:59:07.916020 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T15:59:07.916032 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T15:59:07.916043 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T15:59:07.916054 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T15:59:07.916065 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T15:59:07.916076 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T15:59:07.916099 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T15:59:07.916112 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T15:59:07.916134 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T15:59:07.916148 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T15:59:07.916159 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T15:59:07.916170 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T15:59:07.916181 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T15:59:07.916191 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T15:59:07.916201 #25665] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-01-31T16:00:55.015879 #25654]  INFO -- : reaped #<Process::Status: pid 25657 exit 0> worker=0
+I, [2018-01-31T16:00:55.016047 #25654]  INFO -- : reaped #<Process::Status: pid 25660 exit 0> worker=1
+I, [2018-01-31T16:00:55.016096 #25654]  INFO -- : reaped #<Process::Status: pid 25662 exit 0> worker=2
+I, [2018-01-31T16:00:55.016129 #25654]  INFO -- : reaped #<Process::Status: pid 25665 exit 0> worker=3
+I, [2018-01-31T16:00:55.016187 #25654]  INFO -- : master complete
+I, [2018-01-31T16:04:07.892776 #26020]  INFO -- : Refreshing Gem list
+I, [2018-01-31T16:04:09.643035 #26020]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T16:04:09.643235 #26020]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T16:04:09.645503 #26023]  INFO -- : worker=0 ready
+I, [2018-01-31T16:04:09.649026 #26026]  INFO -- : worker=1 ready
+I, [2018-01-31T16:04:09.650860 #26020]  INFO -- : master process ready
+I, [2018-01-31T16:04:09.656415 #26028]  INFO -- : worker=2 ready
+I, [2018-01-31T16:04:09.659038 #26031]  INFO -- : worker=3 ready
+E, [2018-01-31T16:04:34.810088 #26031] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T16:04:34.810432 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T16:04:34.810487 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T16:04:34.810518 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T16:04:34.810545 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T16:04:34.810570 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T16:04:34.810596 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T16:04:34.810620 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T16:04:34.810645 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T16:04:34.810696 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T16:04:34.810728 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T16:04:34.810755 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T16:04:34.810780 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T16:04:34.810805 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T16:04:34.810832 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T16:04:34.810875 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T16:04:34.810908 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T16:04:34.810935 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T16:04:34.810960 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T16:04:34.810984 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T16:04:34.811011 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T16:04:34.811037 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T16:04:34.811063 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T16:04:34.811089 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T16:04:34.811113 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T16:04:34.811138 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T16:04:34.811163 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T16:04:34.811178 #26031] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-01-31T16:47:32.527779 #26020]  INFO -- : reaped #<Process::Status: pid 26023 exit 0> worker=0
+I, [2018-01-31T16:47:32.527963 #26020]  INFO -- : reaped #<Process::Status: pid 26026 exit 0> worker=1
+I, [2018-01-31T16:47:32.528013 #26020]  INFO -- : reaped #<Process::Status: pid 26028 exit 0> worker=2
+I, [2018-01-31T16:47:32.528049 #26020]  INFO -- : reaped #<Process::Status: pid 26031 exit 0> worker=3
+I, [2018-01-31T16:47:32.528113 #26020]  INFO -- : master complete
+I, [2018-01-31T16:47:55.565026 #26395]  INFO -- : Refreshing Gem list
+I, [2018-01-31T16:47:57.372163 #26395]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T16:47:57.372423 #26395]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T16:47:57.375375 #26398]  INFO -- : worker=0 ready
+I, [2018-01-31T16:47:57.379418 #26401]  INFO -- : worker=1 ready
+I, [2018-01-31T16:47:57.380886 #26395]  INFO -- : master process ready
+I, [2018-01-31T16:47:57.387423 #26403]  INFO -- : worker=2 ready
+I, [2018-01-31T16:47:57.388965 #26406]  INFO -- : worker=3 ready
+E, [2018-01-31T16:48:06.096445 #26406] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T16:48:06.096761 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T16:48:06.096804 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T16:48:06.096822 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T16:48:06.096834 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T16:48:06.096844 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T16:48:06.096855 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T16:48:06.096866 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T16:48:06.096876 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T16:48:06.096887 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T16:48:06.096911 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T16:48:06.096925 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T16:48:06.096935 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T16:48:06.096945 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T16:48:06.096956 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T16:48:06.096966 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T16:48:06.096976 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T16:48:06.096986 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T16:48:06.097006 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T16:48:06.097019 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T16:48:06.097039 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T16:48:06.097052 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T16:48:06.097063 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T16:48:06.097073 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T16:48:06.097083 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T16:48:06.097104 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T16:48:06.097125 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T16:48:06.097138 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-01-31T16:48:26.487967 #26406] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T16:48:26.488294 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T16:48:26.488331 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T16:48:26.488346 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T16:48:26.488358 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T16:48:26.488369 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T16:48:26.488380 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T16:48:26.488390 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T16:48:26.488401 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T16:48:26.488411 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T16:48:26.488422 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T16:48:26.488433 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T16:48:26.488443 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T16:48:26.488453 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T16:48:26.488464 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T16:48:26.488474 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T16:48:26.488485 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T16:48:26.488496 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T16:48:26.488741 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T16:48:26.488753 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T16:48:26.488763 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T16:48:26.488791 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T16:48:26.488815 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T16:48:26.488854 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T16:48:26.488878 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T16:48:26.488899 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T16:48:26.488918 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T16:48:26.488929 #26406] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-01-31T16:50:35.038904 #26395]  INFO -- : reaped #<Process::Status: pid 26398 exit 0> worker=0
+I, [2018-01-31T16:50:35.039031 #26395]  INFO -- : reaped #<Process::Status: pid 26401 exit 0> worker=1
+I, [2018-01-31T16:50:35.039075 #26395]  INFO -- : reaped #<Process::Status: pid 26403 exit 0> worker=2
+I, [2018-01-31T16:50:35.039169 #26395]  INFO -- : reaped #<Process::Status: pid 26406 exit 0> worker=3
+I, [2018-01-31T16:50:35.039238 #26395]  INFO -- : master complete
+I, [2018-01-31T16:50:42.092551 #26748]  INFO -- : Refreshing Gem list
+I, [2018-01-31T16:50:43.891435 #26748]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T16:50:43.891622 #26748]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T16:50:43.894589 #26751]  INFO -- : worker=0 ready
+I, [2018-01-31T16:50:43.896639 #26753]  INFO -- : worker=1 ready
+I, [2018-01-31T16:50:43.897858 #26748]  INFO -- : master process ready
+I, [2018-01-31T16:50:43.903093 #26756]  INFO -- : worker=2 ready
+I, [2018-01-31T16:50:43.909423 #26759]  INFO -- : worker=3 ready
+E, [2018-01-31T16:50:53.876819 #26759] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T16:50:53.876994 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T16:50:53.877020 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T16:50:53.877033 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T16:50:53.877313 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T16:50:53.877339 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T16:50:53.877351 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T16:50:53.877362 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T16:50:53.877372 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T16:50:53.877382 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T16:50:53.877392 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T16:50:53.877402 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T16:50:53.877412 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T16:50:53.877422 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T16:50:53.877444 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T16:50:53.877456 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T16:50:53.877466 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T16:50:53.877476 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T16:50:53.877486 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T16:50:53.877496 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T16:50:53.877520 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T16:50:53.877534 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T16:50:53.877550 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T16:50:53.877566 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T16:50:53.877576 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T16:50:53.877595 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T16:50:53.877612 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T16:50:53.877622 #26759] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-01-31T16:52:39.497506 #26751] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T16:52:39.497929 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T16:52:39.497994 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T16:52:39.498055 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T16:52:39.498093 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T16:52:39.498547 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T16:52:39.498588 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T16:52:39.498623 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T16:52:39.498656 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T16:52:39.498688 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T16:52:39.498721 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T16:52:39.498788 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T16:52:39.498826 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T16:52:39.498858 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T16:52:39.498891 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T16:52:39.498923 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T16:52:39.499107 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T16:52:39.499162 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T16:52:39.499240 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T16:52:39.499346 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T16:52:39.499446 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T16:52:39.499543 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T16:52:39.499638 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T16:52:39.499720 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T16:52:39.499799 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T16:52:39.499877 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T16:52:39.499956 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T16:52:39.500014 #26751] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-01-31T17:07:42.214587 #26748]  INFO -- : reaped #<Process::Status: pid 26751 exit 0> worker=0
+I, [2018-01-31T17:07:42.214739 #26748]  INFO -- : reaped #<Process::Status: pid 26753 exit 0> worker=1
+I, [2018-01-31T17:07:42.214784 #26748]  INFO -- : reaped #<Process::Status: pid 26756 exit 0> worker=2
+I, [2018-01-31T17:07:42.214822 #26748]  INFO -- : reaped #<Process::Status: pid 26759 exit 0> worker=3
+I, [2018-01-31T17:07:42.214884 #26748]  INFO -- : master complete
+I, [2018-01-31T17:08:01.149221 #27593]  INFO -- : Refreshing Gem list
+I, [2018-01-31T17:08:03.060715 #27593]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T17:08:03.060931 #27593]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T17:08:03.064050 #27596]  INFO -- : worker=0 ready
+I, [2018-01-31T17:08:03.066403 #27598]  INFO -- : worker=1 ready
+I, [2018-01-31T17:08:03.067737 #27593]  INFO -- : master process ready
+I, [2018-01-31T17:08:03.072989 #27601]  INFO -- : worker=2 ready
+I, [2018-01-31T17:08:03.075037 #27604]  INFO -- : worker=3 ready
+E, [2018-01-31T17:08:08.897370 #27604] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T17:08:08.897749 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T17:08:08.897802 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T17:08:08.897820 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T17:08:08.897832 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T17:08:08.897842 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T17:08:08.897853 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T17:08:08.897878 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T17:08:08.897892 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T17:08:08.897903 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T17:08:08.897913 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T17:08:08.897925 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T17:08:08.897936 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T17:08:08.897946 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T17:08:08.897956 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T17:08:08.897967 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T17:08:08.898087 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T17:08:08.898139 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T17:08:08.898153 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T17:08:08.898174 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T17:08:08.898189 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T17:08:08.898200 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T17:08:08.898210 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T17:08:08.898221 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T17:08:08.898232 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T17:08:08.898243 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T17:08:08.898253 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T17:08:08.898464 #27604] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+E, [2018-01-31T17:08:41.181056 #27601] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2018-01-31T17:08:41.181406 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+E, [2018-01-31T17:08:41.181478 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+E, [2018-01-31T17:08:41.181520 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+E, [2018-01-31T17:08:41.181551 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+E, [2018-01-31T17:08:41.181581 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+E, [2018-01-31T17:08:41.181611 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:606:in `process_client'
+E, [2018-01-31T17:08:41.181640 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:701:in `worker_loop'
+E, [2018-01-31T17:08:41.181669 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+E, [2018-01-31T17:08:41.181699 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:142:in `start'
+E, [2018-01-31T17:08:41.181729 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-01-31T17:08:41.181773 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-01-31T17:08:41.181803 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-01-31T17:08:41.181832 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-01-31T17:08:41.181861 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-01-31T17:08:41.181891 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-01-31T17:08:41.181920 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-01-31T17:08:41.182035 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-01-31T17:08:41.182069 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-01-31T17:08:41.182118 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-01-31T17:08:41.182154 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-01-31T17:08:41.182184 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-01-31T17:08:41.182213 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-01-31T17:08:41.182252 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-01-31T17:08:41.182284 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-01-31T17:08:41.182327 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-01-31T17:08:41.182358 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-01-31T17:08:41.182529 #27601] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-01-31T17:23:38.886434 #27593]  INFO -- : reaped #<Process::Status: pid 27596 exit 0> worker=0
+I, [2018-01-31T17:23:38.886597 #27593]  INFO -- : reaped #<Process::Status: pid 27598 exit 0> worker=1
+I, [2018-01-31T17:23:38.886646 #27593]  INFO -- : reaped #<Process::Status: pid 27601 exit 0> worker=2
+I, [2018-01-31T17:23:38.886682 #27593]  INFO -- : reaped #<Process::Status: pid 27604 exit 0> worker=3
+I, [2018-01-31T17:23:38.886753 #27593]  INFO -- : master complete
+I, [2018-01-31T17:23:52.384793 #28286]  INFO -- : Refreshing Gem list
+I, [2018-01-31T17:23:54.308503 #28286]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T17:23:54.308772 #28286]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T17:23:54.313366 #28289]  INFO -- : worker=0 ready
+I, [2018-01-31T17:23:54.316913 #28291]  INFO -- : worker=1 ready
+I, [2018-01-31T17:23:54.319399 #28286]  INFO -- : master process ready
+I, [2018-01-31T17:23:54.325238 #28294]  INFO -- : worker=2 ready
+I, [2018-01-31T17:23:54.332048 #28297]  INFO -- : worker=3 ready
+I, [2018-01-31T17:31:00.814701 #28286]  INFO -- : reaped #<Process::Status: pid 28289 exit 0> worker=0
+I, [2018-01-31T17:31:00.814869 #28286]  INFO -- : reaped #<Process::Status: pid 28291 exit 0> worker=1
+I, [2018-01-31T17:31:00.814929 #28286]  INFO -- : reaped #<Process::Status: pid 28294 exit 0> worker=2
+I, [2018-01-31T17:31:00.815018 #28286]  INFO -- : reaped #<Process::Status: pid 28297 exit 0> worker=3
+I, [2018-01-31T17:31:00.815098 #28286]  INFO -- : master complete
+I, [2018-01-31T17:38:31.295506 #1849]  INFO -- : Refreshing Gem list
+I, [2018-01-31T17:38:33.624335 #1849]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T17:38:33.624578 #1849]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T17:38:33.627580 #1852]  INFO -- : worker=0 ready
+I, [2018-01-31T17:38:33.629637 #1854]  INFO -- : worker=1 ready
+I, [2018-01-31T17:38:33.630663 #1849]  INFO -- : master process ready
+I, [2018-01-31T17:38:33.635711 #1857]  INFO -- : worker=2 ready
+I, [2018-01-31T17:38:33.641673 #1860]  INFO -- : worker=3 ready
+I, [2018-01-31T20:12:54.989162 #1849]  INFO -- : reaped #<Process::Status: pid 1860 exit 0> worker=3
+I, [2018-01-31T20:12:55.089796 #1849]  INFO -- : reaped #<Process::Status: pid 1852 exit 0> worker=0
+I, [2018-01-31T20:12:55.089960 #1849]  INFO -- : reaped #<Process::Status: pid 1854 exit 0> worker=1
+I, [2018-01-31T20:12:55.090028 #1849]  INFO -- : reaped #<Process::Status: pid 1857 exit 0> worker=2
+I, [2018-01-31T20:12:55.090153 #1849]  INFO -- : master complete
+I, [2018-01-31T20:15:24.490092 #3737]  INFO -- : Refreshing Gem list
+I, [2018-01-31T20:15:26.264644 #3737]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T20:15:26.264856 #3737]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T20:15:26.267973 #3740]  INFO -- : worker=0 ready
+I, [2018-01-31T20:15:26.270552 #3742]  INFO -- : worker=1 ready
+I, [2018-01-31T20:15:26.271956 #3737]  INFO -- : master process ready
+I, [2018-01-31T20:15:26.277679 #3745]  INFO -- : worker=2 ready
+I, [2018-01-31T20:15:26.278717 #3748]  INFO -- : worker=3 ready
+I, [2018-01-31T20:15:36.749271 #3737]  INFO -- : reaped #<Process::Status: pid 3740 exit 0> worker=0
+I, [2018-01-31T20:15:36.749391 #3737]  INFO -- : reaped #<Process::Status: pid 3742 exit 0> worker=1
+I, [2018-01-31T20:15:36.749454 #3737]  INFO -- : reaped #<Process::Status: pid 3745 exit 0> worker=2
+I, [2018-01-31T20:15:36.749507 #3737]  INFO -- : reaped #<Process::Status: pid 3748 exit 0> worker=3
+I, [2018-01-31T20:15:36.749562 #3737]  INFO -- : master complete
+I, [2018-01-31T20:25:17.259912 #3534]  INFO -- : Refreshing Gem list
+I, [2018-01-31T20:25:19.623479 #3534]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T20:25:19.623663 #3534]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T20:25:19.627211 #3537]  INFO -- : worker=0 ready
+I, [2018-01-31T20:25:19.630139 #3539]  INFO -- : worker=1 ready
+I, [2018-01-31T20:25:19.631632 #3534]  INFO -- : master process ready
+I, [2018-01-31T20:25:19.642553 #3542]  INFO -- : worker=2 ready
+I, [2018-01-31T20:25:19.647137 #3545]  INFO -- : worker=3 ready
+I, [2018-01-31T20:27:44.246023 #3534]  INFO -- : reaped #<Process::Status: pid 3537 exit 0> worker=0
+I, [2018-01-31T20:27:44.246196 #3534]  INFO -- : reaped #<Process::Status: pid 3539 exit 0> worker=1
+I, [2018-01-31T20:27:44.246235 #3534]  INFO -- : reaped #<Process::Status: pid 3542 exit 0> worker=2
+I, [2018-01-31T20:27:44.246269 #3534]  INFO -- : reaped #<Process::Status: pid 3545 exit 0> worker=3
+I, [2018-01-31T20:27:44.246324 #3534]  INFO -- : master complete
+I, [2018-01-31T20:28:15.102594 #4067]  INFO -- : Refreshing Gem list
+I, [2018-01-31T20:28:16.950214 #4067]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T20:28:16.950392 #4067]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T20:28:16.953404 #4070]  INFO -- : worker=0 ready
+I, [2018-01-31T20:28:16.955346 #4072]  INFO -- : worker=1 ready
+I, [2018-01-31T20:28:16.956496 #4067]  INFO -- : master process ready
+I, [2018-01-31T20:28:16.960987 #4075]  INFO -- : worker=2 ready
+I, [2018-01-31T20:28:16.967537 #4078]  INFO -- : worker=3 ready
+I, [2018-01-31T20:39:04.826433 #4067]  INFO -- : reaped #<Process::Status: pid 4070 exit 0> worker=0
+I, [2018-01-31T20:39:04.827057 #4067]  INFO -- : reaped #<Process::Status: pid 4072 exit 0> worker=1
+I, [2018-01-31T20:39:04.827118 #4067]  INFO -- : reaped #<Process::Status: pid 4075 exit 0> worker=2
+I, [2018-01-31T20:39:04.827156 #4067]  INFO -- : reaped #<Process::Status: pid 4078 exit 0> worker=3
+I, [2018-01-31T20:39:04.827276 #4067]  INFO -- : master complete
+I, [2018-01-31T20:39:13.848665 #5802]  INFO -- : Refreshing Gem list
+bundler: failed to load command: /home/dev/.rbenv/versions/2.5.0/bin/unicorn (/home/dev/.rbenv/versions/2.5.0/bin/unicorn)
+LoadError: cannot load such file -- zip/zip
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:292:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:292:in `block in require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:258:in `load_dependency'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:292:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/axlsx-1.3.6/lib/axlsx.rb:26:in `<top (required)>'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:81:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:81:in `block (2 levels) in require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:76:in `each'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:76:in `block in require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:65:in `each'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:65:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler.rb:114:in `require'
+  /home/dev/mgblog/config/application.rb:7:in `<top (required)>'
+  /home/dev/mgblog/config/environment.rb:2:in `require_relative'
+  /home/dev/mgblog/config/environment.rb:2:in `<top (required)>'
+  config.ru:4:in `require_relative'
+  config.ru:4:in `block in <main>'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/builder.rb:55:in `instance_eval'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn.rb:56:in `eval'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn.rb:56:in `block in builder'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:795:in `build_app!'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+  /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+  /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+I, [2018-01-31T20:39:38.104127 #6130]  INFO -- : Refreshing Gem list
+bundler: failed to load command: /home/dev/.rbenv/versions/2.5.0/bin/unicorn (/home/dev/.rbenv/versions/2.5.0/bin/unicorn)
+LoadError: cannot load such file -- zip/zip
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:292:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:292:in `block in require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:258:in `load_dependency'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activesupport-5.1.4/lib/active_support/dependencies.rb:292:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/axlsx-1.3.6/lib/axlsx.rb:26:in `<top (required)>'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:81:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:81:in `block (2 levels) in require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:76:in `each'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:76:in `block in require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:65:in `each'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/runtime.rb:65:in `require'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler.rb:114:in `require'
+  /home/dev/mgblog/config/application.rb:7:in `<top (required)>'
+  /home/dev/mgblog/config/environment.rb:2:in `require_relative'
+  /home/dev/mgblog/config/environment.rb:2:in `<top (required)>'
+  config.ru:4:in `require_relative'
+  config.ru:4:in `block in <main>'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/builder.rb:55:in `instance_eval'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.3/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn.rb:56:in `eval'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn.rb:56:in `block in builder'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:795:in `build_app!'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:139:in `start'
+  /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+  /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+  /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+I, [2018-01-31T20:41:26.346457 #7175]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-01-31T20:41:29.566492 #7175]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T20:41:29.566707 #7175]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T20:41:29.570091 #7179]  INFO -- : worker=0 ready
+I, [2018-01-31T20:41:29.572343 #7181]  INFO -- : worker=1 ready
+I, [2018-01-31T20:41:29.574018 #7175]  INFO -- : master process ready
+I, [2018-01-31T20:41:29.586389 #7187]  INFO -- : worker=3 ready
+I, [2018-01-31T20:41:29.596982 #7184]  INFO -- : worker=2 ready
+I, [2018-01-31T23:49:31.002952 #7175]  INFO -- : reaped #<Process::Status: pid 7181 exit 0> worker=1
+I, [2018-01-31T23:49:31.003133 #7175]  INFO -- : reaped #<Process::Status: pid 7184 exit 0> worker=2
+I, [2018-01-31T23:49:31.003184 #7175]  INFO -- : reaped #<Process::Status: pid 7187 exit 0> worker=3
+I, [2018-01-31T23:49:31.103553 #7175]  INFO -- : reaped #<Process::Status: pid 7179 exit 0> worker=0
+I, [2018-01-31T23:49:31.104158 #7175]  INFO -- : master complete
+I, [2018-01-31T23:49:34.686247 #9598]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-01-31T23:49:43.892254 #9598]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-01-31T23:49:43.892591 #9598]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-01-31T23:49:43.900555 #9613]  INFO -- : worker=0 ready
+I, [2018-01-31T23:49:43.911853 #9616]  INFO -- : worker=1 ready
+I, [2018-01-31T23:49:43.914028 #9619]  INFO -- : worker=2 ready
+I, [2018-01-31T23:49:43.920545 #9598]  INFO -- : master process ready
+I, [2018-01-31T23:49:43.934131 #9622]  INFO -- : worker=3 ready
+I, [2018-02-01T21:53:15.017032 #9598]  INFO -- : reaped #<Process::Status: pid 9613 exit 0> worker=0
+I, [2018-02-01T21:53:15.017691 #9598]  INFO -- : reaped #<Process::Status: pid 9616 exit 0> worker=1
+I, [2018-02-01T21:53:15.018016 #9598]  INFO -- : reaped #<Process::Status: pid 9619 exit 0> worker=2
+I, [2018-02-01T21:53:15.018086 #9598]  INFO -- : reaped #<Process::Status: pid 9622 exit 0> worker=3
+I, [2018-02-01T21:53:15.018179 #9598]  INFO -- : master complete
+I, [2018-02-01T21:53:51.910677 #23717]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T21:53:55.566081 #23717]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T21:53:55.566295 #23717]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T21:53:55.571193 #23721]  INFO -- : worker=0 ready
+I, [2018-02-01T21:53:55.574407 #23723]  INFO -- : worker=1 ready
+I, [2018-02-01T21:53:55.576872 #23726]  INFO -- : worker=2 ready
+I, [2018-02-01T21:53:55.578201 #23717]  INFO -- : master process ready
+I, [2018-02-01T21:53:55.590741 #23730]  INFO -- : worker=3 ready
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and sending myself QUIT instead
+E, [2018-02-01T22:03:55.809647 #23717] ERROR -- : master loop error: undefined method `Process' for "KILL":String (NoMethodError)
+E, [2018-02-01T22:03:55.818148 #23717] ERROR -- : /home/dev/mgblog/config/unicorn.rb:14:in `block (2 levels) in reload'
+E, [2018-02-01T22:03:55.818285 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:383:in `kgio_wait_readable'
+E, [2018-02-01T22:03:55.818319 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:383:in `master_sleep'
+E, [2018-02-01T22:03:55.818353 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:294:in `join'
+E, [2018-02-01T22:03:55.818379 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-02-01T22:03:55.818404 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-02-01T22:03:55.818424 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-02-01T22:03:55.818446 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-02-01T22:03:55.818468 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-02-01T22:03:55.818489 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-02-01T22:03:55.818538 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-02-01T22:03:55.818593 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-02-01T22:03:55.818634 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-02-01T22:03:55.818673 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-02-01T22:03:55.818894 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-02-01T22:03:55.818922 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-02-01T22:03:55.818950 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-02-01T22:03:55.818970 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-02-01T22:03:55.818988 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-02-01T22:03:55.819009 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-02-01T22:03:55.819028 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-02-01T22:03:55.819046 #23717] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-02-01T22:03:55.819124 #23717]  INFO -- : reloading config_file=/home/dev/mgblog/config/unicorn.rb
+I, [2018-02-01T22:03:56.635733 #23717]  INFO -- : Refreshing Gem list
+I, [2018-02-01T22:03:56.751662 #23717]  INFO -- : done reloading config_file=/home/dev/mgblog/config/unicorn.rb
+I, [2018-02-01T22:03:56.826641 #23717]  INFO -- : reaped #<Process::Status: pid 23726 exit 0> worker=2
+I, [2018-02-01T22:03:56.848090 #23717]  INFO -- : reaped #<Process::Status: pid 23721 exit 0> worker=0
+I, [2018-02-01T22:03:56.851528 #12679]  INFO -- : worker=0 ready
+I, [2018-02-01T22:03:56.864234 #12676]  INFO -- : worker=2 ready
+I, [2018-02-01T22:03:57.029253 #23717]  INFO -- : reaped #<Process::Status: pid 23723 exit 0> worker=1
+I, [2018-02-01T22:03:57.045129 #12702]  INFO -- : worker=1 ready
+I, [2018-02-01T22:03:57.049737 #23717]  INFO -- : reaped #<Process::Status: pid 23730 exit 0> worker=3
+I, [2018-02-01T22:03:57.351502 #23717]  INFO -- : reaped #<Process::Status: pid 12676 exit 0> worker=2
+I, [2018-02-01T22:03:57.351632 #23717]  INFO -- : reaped #<Process::Status: pid 12679 exit 0> worker=0
+I, [2018-02-01T22:03:57.351685 #23717]  INFO -- : reaped #<Process::Status: pid 12702 exit 0> worker=1
+I, [2018-02-01T22:03:57.352278 #23717]  INFO -- : master complete
+I, [2018-02-01T22:04:18.685143 #1549]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T22:04:25.107251 #1549]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T22:04:25.120662 #1549]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T22:04:25.125634 #1579]  INFO -- : worker=0 ready
+I, [2018-02-01T22:04:25.131814 #1582]  INFO -- : worker=1 ready
+I, [2018-02-01T22:04:25.133744 #1584]  INFO -- : worker=2 ready
+I, [2018-02-01T22:04:25.136839 #1549]  INFO -- : master process ready
+I, [2018-02-01T22:04:25.145090 #1588]  INFO -- : worker=3 ready
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and doing nothing.Wait for master to send QUIT
+Unicorn master intercepting TERM and sending myself QUIT instead
+E, [2018-02-01T22:19:24.327644 #1549] ERROR -- : master loop error: undefined method `Process' for "KILL":String (NoMethodError)
+E, [2018-02-01T22:19:24.343466 #1549] ERROR -- : /home/dev/mgblog/config/unicorn.rb:14:in `block (2 levels) in reload'
+E, [2018-02-01T22:19:24.343573 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:383:in `kgio_wait_readable'
+E, [2018-02-01T22:19:24.343617 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:383:in `master_sleep'
+E, [2018-02-01T22:19:24.343664 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/lib/unicorn/http_server.rb:294:in `join'
+E, [2018-02-01T22:19:24.343701 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/unicorn-5.4.0/bin/unicorn:126:in `<top (required)>'
+E, [2018-02-01T22:19:24.343745 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `load'
+E, [2018-02-01T22:19:24.343778 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/unicorn:23:in `<top (required)>'
+E, [2018-02-01T22:19:24.343811 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `load'
+E, [2018-02-01T22:19:24.343845 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:75:in `kernel_load'
+E, [2018-02-01T22:19:24.343895 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli/exec.rb:28:in `run'
+E, [2018-02-01T22:19:24.343945 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:424:in `exec'
+E, [2018-02-01T22:19:24.343981 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+E, [2018-02-01T22:19:24.344068 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-02-01T22:19:24.344126 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+E, [2018-02-01T22:19:24.344170 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:27:in `dispatch'
+E, [2018-02-01T22:19:24.344206 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+E, [2018-02-01T22:19:24.344254 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/cli.rb:18:in `start'
+E, [2018-02-01T22:19:24.344929 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:30:in `block in <top (required)>'
+E, [2018-02-01T22:19:24.344983 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/lib/bundler/friendly_errors.rb:122:in `with_friendly_errors'
+E, [2018-02-01T22:19:24.345019 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/bundler-1.16.1/exe/bundle:22:in `<top (required)>'
+E, [2018-02-01T22:19:24.345052 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `load'
+E, [2018-02-01T22:19:24.345084 #1549] ERROR -- : /home/dev/.rbenv/versions/2.5.0/bin/bundle:23:in `<main>'
+I, [2018-02-01T22:19:24.346546 #1549]  INFO -- : reloading config_file=/home/dev/mgblog/config/unicorn.rb
+I, [2018-02-01T22:19:25.587755 #1549]  INFO -- : Refreshing Gem list
+I, [2018-02-01T22:19:25.610312 #1549]  INFO -- : done reloading config_file=/home/dev/mgblog/config/unicorn.rb
+I, [2018-02-01T22:19:25.718376 #1549]  INFO -- : reaped #<Process::Status: pid 1579 exit 0> worker=0
+I, [2018-02-01T22:19:25.718545 #1549]  INFO -- : reaped #<Process::Status: pid 1582 exit 0> worker=1
+I, [2018-02-01T22:19:25.718633 #1549]  INFO -- : reaped #<Process::Status: pid 1584 exit 0> worker=2
+I, [2018-02-01T22:19:25.718694 #1549]  INFO -- : reaped #<Process::Status: pid 1588 exit 0> worker=3
+I, [2018-02-01T22:19:25.719191 #1549]  INFO -- : master complete
+I, [2018-02-01T22:19:46.459862 #1536]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T22:19:52.861296 #1536]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T22:19:52.861569 #1536]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T22:19:52.865497 #1543]  INFO -- : worker=0 ready
+I, [2018-02-01T22:19:52.870559 #1546]  INFO -- : worker=1 ready
+I, [2018-02-01T22:19:52.872214 #1536]  INFO -- : master process ready
+I, [2018-02-01T22:19:52.877848 #1548]  INFO -- : worker=2 ready
+I, [2018-02-01T22:19:52.881417 #1551]  INFO -- : worker=3 ready
+I, [2018-02-01T23:00:35.615587 #1536]  INFO -- : reaped #<Process::Status: pid 1546 exit 0> worker=1
+I, [2018-02-01T23:00:35.616993 #1536]  INFO -- : reaped #<Process::Status: pid 1543 exit 0> worker=0
+I, [2018-02-01T23:00:35.717474 #1536]  INFO -- : reaped #<Process::Status: pid 1548 exit 0> worker=2
+I, [2018-02-01T23:00:35.717699 #1536]  INFO -- : reaped #<Process::Status: pid 1551 exit 0> worker=3
+I, [2018-02-01T23:00:35.718290 #1536]  INFO -- : master complete
+I, [2018-02-01T23:01:08.957294 #28902]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T23:01:13.633450 #28902]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T23:01:13.633761 #28902]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T23:01:13.638719 #28906]  INFO -- : worker=0 ready
+I, [2018-02-01T23:01:13.642228 #28909]  INFO -- : worker=1 ready
+I, [2018-02-01T23:01:13.645622 #28911]  INFO -- : worker=2 ready
+I, [2018-02-01T23:01:13.646270 #28902]  INFO -- : master process ready
+I, [2018-02-01T23:01:13.653714 #28914]  INFO -- : worker=3 ready
+I, [2018-02-01T23:06:39.478245 #28902]  INFO -- : reaped #<Process::Status: pid 28906 exit 0> worker=0
+I, [2018-02-01T23:06:39.478596 #28902]  INFO -- : reaped #<Process::Status: pid 28909 exit 0> worker=1
+I, [2018-02-01T23:06:39.579144 #28902]  INFO -- : reaped #<Process::Status: pid 28911 exit 0> worker=2
+I, [2018-02-01T23:06:39.579351 #28902]  INFO -- : reaped #<Process::Status: pid 28914 exit 0> worker=3
+I, [2018-02-01T23:06:39.579530 #28902]  INFO -- : master complete
+I, [2018-02-01T23:06:57.408068 #30128]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T23:07:02.568879 #30128]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T23:07:02.569135 #30128]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T23:07:02.573228 #30132]  INFO -- : worker=0 ready
+I, [2018-02-01T23:07:02.579150 #30135]  INFO -- : worker=1 ready
+I, [2018-02-01T23:07:02.581828 #30128]  INFO -- : master process ready
+I, [2018-02-01T23:07:02.589824 #30137]  INFO -- : worker=2 ready
+I, [2018-02-01T23:07:02.591740 #30140]  INFO -- : worker=3 ready
+I, [2018-02-01T23:09:02.771969 #30128]  INFO -- : reaped #<Process::Status: pid 30132 exit 0> worker=0
+I, [2018-02-01T23:09:02.772168 #30128]  INFO -- : reaped #<Process::Status: pid 30135 exit 0> worker=1
+I, [2018-02-01T23:09:02.772344 #30128]  INFO -- : reaped #<Process::Status: pid 30137 exit 0> worker=2
+I, [2018-02-01T23:09:02.772469 #30128]  INFO -- : reaped #<Process::Status: pid 30140 exit 0> worker=3
+I, [2018-02-01T23:09:02.772607 #30128]  INFO -- : master complete
+I, [2018-02-01T23:09:11.159070 #30914]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T23:09:15.515333 #30914]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T23:09:15.515575 #30914]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T23:09:15.519429 #30918]  INFO -- : worker=0 ready
+I, [2018-02-01T23:09:15.526654 #30914]  INFO -- : master process ready
+I, [2018-02-01T23:09:15.528984 #30921]  INFO -- : worker=1 ready
+I, [2018-02-01T23:09:15.530079 #30923]  INFO -- : worker=2 ready
+I, [2018-02-01T23:09:15.531751 #30926]  INFO -- : worker=3 ready
+I, [2018-02-01T23:45:53.034986 #30914]  INFO -- : reaped #<Process::Status: pid 30918 exit 0> worker=0
+I, [2018-02-01T23:45:53.035210 #30914]  INFO -- : reaped #<Process::Status: pid 30921 exit 0> worker=1
+I, [2018-02-01T23:45:53.035315 #30914]  INFO -- : reaped #<Process::Status: pid 30923 exit 0> worker=2
+I, [2018-02-01T23:45:53.135704 #30914]  INFO -- : reaped #<Process::Status: pid 30926 exit 0> worker=3
+I, [2018-02-01T23:45:53.136045 #30914]  INFO -- : master complete
+I, [2018-02-01T23:46:10.471354 #2169]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T23:46:14.939277 #2169]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T23:46:14.939520 #2169]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T23:46:14.946012 #2173]  INFO -- : worker=0 ready
+I, [2018-02-01T23:46:14.947766 #2175]  INFO -- : worker=1 ready
+I, [2018-02-01T23:46:14.949934 #2169]  INFO -- : master process ready
+I, [2018-02-01T23:46:14.957734 #2178]  INFO -- : worker=2 ready
+I, [2018-02-01T23:46:14.959617 #2181]  INFO -- : worker=3 ready
+I, [2018-02-01T23:46:57.293708 #2169]  INFO -- : reaped #<Process::Status: pid 2173 exit 0> worker=0
+I, [2018-02-01T23:46:57.293892 #2169]  INFO -- : reaped #<Process::Status: pid 2175 exit 0> worker=1
+I, [2018-02-01T23:46:57.293984 #2169]  INFO -- : reaped #<Process::Status: pid 2178 exit 0> worker=2
+I, [2018-02-01T23:46:57.294074 #2169]  INFO -- : reaped #<Process::Status: pid 2181 exit 0> worker=3
+I, [2018-02-01T23:46:57.294179 #2169]  INFO -- : master complete
+I, [2018-02-01T23:47:23.443272 #2582]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T23:47:28.374623 #2582]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T23:47:28.374924 #2582]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=10
+I, [2018-02-01T23:47:28.379345 #2588]  INFO -- : worker=0 ready
+I, [2018-02-01T23:47:28.385797 #2591]  INFO -- : worker=1 ready
+I, [2018-02-01T23:47:28.388907 #2594]  INFO -- : worker=2 ready
+I, [2018-02-01T23:47:28.393846 #2597]  INFO -- : worker=3 ready
+I, [2018-02-01T23:47:28.394343 #2582]  INFO -- : master process ready
+I, [2018-02-01T23:57:19.629083 #2582]  INFO -- : reaped #<Process::Status: pid 2588 exit 0> worker=0
+I, [2018-02-01T23:57:19.629309 #2582]  INFO -- : reaped #<Process::Status: pid 2591 exit 0> worker=1
+I, [2018-02-01T23:57:19.629387 #2582]  INFO -- : reaped #<Process::Status: pid 2594 exit 0> worker=2
+I, [2018-02-01T23:57:19.629464 #2582]  INFO -- : reaped #<Process::Status: pid 2597 exit 0> worker=3
+I, [2018-02-01T23:57:19.629598 #2582]  INFO -- : master complete
+I, [2018-02-01T23:57:45.331008 #4547]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T23:57:49.528168 #4547]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T23:57:49.528490 #4547]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T23:57:49.532155 #4551]  INFO -- : worker=0 ready
+I, [2018-02-01T23:57:49.538297 #4547]  INFO -- : master process ready
+I, [2018-02-01T23:57:49.545650 #4556]  INFO -- : worker=2 ready
+I, [2018-02-01T23:57:49.546225 #4554]  INFO -- : worker=1 ready
+I, [2018-02-01T23:57:49.547969 #4559]  INFO -- : worker=3 ready
+I, [2018-02-01T23:59:24.349440 #4547]  INFO -- : reaped #<Process::Status: pid 4551 exit 0> worker=0
+I, [2018-02-01T23:59:24.349635 #4547]  INFO -- : reaped #<Process::Status: pid 4554 exit 0> worker=1
+I, [2018-02-01T23:59:24.349750 #4547]  INFO -- : reaped #<Process::Status: pid 4556 exit 0> worker=2
+I, [2018-02-01T23:59:24.350156 #4547]  INFO -- : reaped #<Process::Status: pid 4559 exit 0> worker=3
+I, [2018-02-01T23:59:24.350252 #4547]  INFO -- : master complete
+I, [2018-02-01T23:59:50.106956 #5552]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-01T23:59:54.532031 #5552]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-01T23:59:54.532323 #5552]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-01T23:59:54.535213 #5556]  INFO -- : worker=0 ready
+I, [2018-02-01T23:59:54.539483 #5559]  INFO -- : worker=1 ready
+I, [2018-02-01T23:59:54.541646 #5552]  INFO -- : master process ready
+I, [2018-02-01T23:59:54.549433 #5561]  INFO -- : worker=2 ready
+I, [2018-02-01T23:59:54.551059 #5564]  INFO -- : worker=3 ready
+I, [2018-02-02T00:03:18.810779 #5552]  INFO -- : reaped #<Process::Status: pid 5556 exit 0> worker=0
+I, [2018-02-02T00:03:18.811182 #5552]  INFO -- : reaped #<Process::Status: pid 5559 exit 0> worker=1
+I, [2018-02-02T00:03:18.811288 #5552]  INFO -- : reaped #<Process::Status: pid 5561 exit 0> worker=2
+I, [2018-02-02T00:03:18.811375 #5552]  INFO -- : reaped #<Process::Status: pid 5564 exit 0> worker=3
+I, [2018-02-02T00:03:18.811487 #5552]  INFO -- : master complete
+I, [2018-02-02T00:03:39.289661 #6591]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-02T00:03:44.083325 #6591]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-02T00:03:44.083573 #6591]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-02T00:03:44.091341 #6597]  INFO -- : worker=1 ready
+I, [2018-02-02T00:03:44.088119 #6595]  INFO -- : worker=0 ready
+I, [2018-02-02T00:03:44.094136 #6591]  INFO -- : master process ready
+I, [2018-02-02T00:03:44.101748 #6600]  INFO -- : worker=2 ready
+I, [2018-02-02T00:03:44.103782 #6603]  INFO -- : worker=3 ready
+I, [2018-02-02T00:08:16.683955 #6591]  INFO -- : reaped #<Process::Status: pid 6595 exit 0> worker=0
+I, [2018-02-02T00:08:16.684137 #6591]  INFO -- : reaped #<Process::Status: pid 6597 exit 0> worker=1
+I, [2018-02-02T00:08:16.684231 #6591]  INFO -- : reaped #<Process::Status: pid 6600 exit 0> worker=2
+I, [2018-02-02T00:08:16.684386 #6591]  INFO -- : reaped #<Process::Status: pid 6603 exit 0> worker=3
+I, [2018-02-02T00:08:16.684524 #6591]  INFO -- : master complete
+I, [2018-02-02T00:08:35.055155 #7770]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-02T00:08:39.374551 #7770]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-02T00:08:39.374795 #7770]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=10
+I, [2018-02-02T00:08:39.379980 #7774]  INFO -- : worker=0 ready
+I, [2018-02-02T00:08:39.383385 #7776]  INFO -- : worker=1 ready
+I, [2018-02-02T00:08:39.385613 #7770]  INFO -- : master process ready
+I, [2018-02-02T00:08:39.393289 #7779]  INFO -- : worker=2 ready
+I, [2018-02-02T00:08:39.394901 #7782]  INFO -- : worker=3 ready
+I, [2018-02-02T00:09:11.675228 #7770]  INFO -- : reaped #<Process::Status: pid 7774 exit 0> worker=0
+I, [2018-02-02T00:09:11.675424 #7770]  INFO -- : reaped #<Process::Status: pid 7776 exit 0> worker=1
+I, [2018-02-02T00:09:11.675529 #7770]  INFO -- : reaped #<Process::Status: pid 7779 exit 0> worker=2
+I, [2018-02-02T00:09:11.675671 #7770]  INFO -- : reaped #<Process::Status: pid 7782 exit 0> worker=3
+I, [2018-02-02T00:09:11.675840 #7770]  INFO -- : master complete
+I, [2018-02-02T00:09:32.927889 #8487]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-02T00:09:37.279579 #8487]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-02T00:09:37.279854 #8487]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-02T00:09:37.283604 #8491]  INFO -- : worker=0 ready
+I, [2018-02-02T00:09:37.289466 #8494]  INFO -- : worker=1 ready
+I, [2018-02-02T00:09:37.291721 #8487]  INFO -- : master process ready
+I, [2018-02-02T00:09:37.297905 #8496]  INFO -- : worker=2 ready
+I, [2018-02-02T00:09:37.299682 #8499]  INFO -- : worker=3 ready
+I, [2018-02-02T00:10:26.279238 #8487]  INFO -- : reaped #<Process::Status: pid 8491 exit 0> worker=0
+I, [2018-02-02T00:10:26.279420 #8487]  INFO -- : reaped #<Process::Status: pid 8494 exit 0> worker=1
+I, [2018-02-02T00:10:26.279520 #8487]  INFO -- : reaped #<Process::Status: pid 8496 exit 0> worker=2
+I, [2018-02-02T00:10:26.279613 #8487]  INFO -- : reaped #<Process::Status: pid 8499 exit 0> worker=3
+I, [2018-02-02T00:10:26.279738 #8487]  INFO -- : master complete
+I, [2018-02-02T00:10:49.779222 #9205]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-02T00:10:54.657793 #9205]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-02T00:10:54.658129 #9205]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-02T00:10:54.667308 #9209]  INFO -- : worker=0 ready
+I, [2018-02-02T00:10:54.670183 #9211]  INFO -- : worker=1 ready
+I, [2018-02-02T00:10:54.674691 #9214]  INFO -- : worker=2 ready
+I, [2018-02-02T00:10:54.677992 #9217]  INFO -- : worker=3 ready
+I, [2018-02-02T00:10:54.675460 #9205]  INFO -- : master process ready
+I, [2018-02-02T00:14:12.677582 #9205]  INFO -- : reaped #<Process::Status: pid 9209 exit 0> worker=0
+I, [2018-02-02T00:14:12.677764 #9205]  INFO -- : reaped #<Process::Status: pid 9211 exit 0> worker=1
+I, [2018-02-02T00:14:12.677854 #9205]  INFO -- : reaped #<Process::Status: pid 9214 exit 0> worker=2
+I, [2018-02-02T00:14:12.677939 #9205]  INFO -- : reaped #<Process::Status: pid 9217 exit 0> worker=3
+I, [2018-02-02T00:14:12.678068 #9205]  INFO -- : master complete
+I, [2018-02-02T00:14:31.392004 #9983]  INFO -- : Refreshing Gem list
+DEPRECATION WARNING: Sprockets method `register_engine` is deprecated.
+Please register a mime type using `register_mime_type` then
+use `register_compressor` or `register_transformer`.
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:16)
+DEPRECATION WARNING: You are using the a deprecated processor interface Less::Rails::ImportProcessor.
+Please update your processor interface:
+https://github.com/rails/sprockets/blob/master/guides/extending_sprockets.md#supporting-all-versions-of-sprockets-in-processors
+ (called from block in <class:Railtie> at /home/dev/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/less-rails-2.8.0/lib/less/rails/railtie.rb:21)
+I, [2018-02-02T00:14:35.852231 #9983]  INFO -- : unlinking existing socket=/home/dev/mgblog/shared/sockets/unicorn.sock
+I, [2018-02-02T00:14:35.852491 #9983]  INFO -- : listening on addr=/home/dev/mgblog/shared/sockets/unicorn.sock fd=11
+I, [2018-02-02T00:14:35.860507 #9987]  INFO -- : worker=0 ready
+I, [2018-02-02T00:14:35.862474 #9990]  INFO -- : worker=1 ready
+I, [2018-02-02T00:14:35.866233 #9992]  INFO -- : worker=2 ready
+I, [2018-02-02T00:14:35.867729 #9983]  INFO -- : master process ready
+I, [2018-02-02T00:14:35.873570 #9996]  INFO -- : worker=3 ready
