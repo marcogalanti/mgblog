@@ -1235,3 +1235,775 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 180ms (Views: 172.0ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-02 15:41:44 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (4.1ms)
+Completed 200 OK in 105ms (Views: 96.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:41:50 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (9.3ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+Completed 200 OK in 97ms (Views: 87.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:42:47 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (8.1ms)
+  Rendered shared/_navbar.html.erb (3.9ms)
+Completed 200 OK in 102ms (Views: 93.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:43:19 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (11.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (26.2ms)
+  Rendered shared/_navbar.html.erb (3.6ms)
+Completed 200 OK in 188ms (Views: 156.5ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:43:28 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (20.2ms)
+  Rendered shared/_navbar.html.erb (4.2ms)
+Completed 200 OK in 154ms (Views: 121.0ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:44:12 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (7.6ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 108ms (Views: 98.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:44:15 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 100ms (Views: 92.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:44:40 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+Completed 200 OK in 114ms (Views: 100.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:45:26 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (5.5ms)
+Completed 200 OK in 140ms (Views: 128.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:47:08 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+  Rendered shared/_navbar.html.erb (6.5ms)
+Completed 200 OK in 137ms (Views: 125.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:48:49 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (10.6ms)
+  Rendered shared/_navbar.html.erb (8.5ms)
+Completed 200 OK in 176ms (Views: 162.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:49:20 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (10.9ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+Completed 200 OK in 162ms (Views: 152.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:50:05 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (10.6ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 127ms (Views: 113.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:50:51 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+  Rendered shared/_navbar.html.erb (4.0ms)
+Completed 200 OK in 135ms (Views: 126.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:51:24 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (10.2ms)
+  Rendered shared/_navbar.html.erb (5.8ms)
+Completed 200 OK in 135ms (Views: 118.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-02-02 15:57:52 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (10.5ms)
+  Rendered shared/_navbar.html.erb (4.7ms)
+Completed 200 OK in 157ms (Views: 96.4ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 15:57:59 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iTn+qY3nfFTcYfvVsCyhlmM6quty57nJsemmZJWnhct2SSkjS4qr7wbu0JrIUqrxPGes3Q+dq6BsjP0rfoRHBw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 15:57:59 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 15:57:59 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.6ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 115ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 15:58:08 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kuij7ASW2KjWRQXEz+3NgVPBHzM4l1FkyE5uP5sTRzBaymRvFIjtqu6EFH8EOZdz6QFWcwlyAhd4wz0twneFEA==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-02-02 14:58:08', `last_sign_in_at` = '2018-02-02 13:52:18', `sign_in_count` = 4, `updated_at` = '2018-02-02 14:58:08' WHERE `users`.`id` = 1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 278ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 15:58:08 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 89ms (Views: 82.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:03:55 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+Completed 200 OK in 139ms (Views: 82.4ms | ActiveRecord: 3.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:03:58 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xrZ4j+G+KuMrj23CjYE8cXCpSF4EeiTKWd54in6kArwQm/yOS2MtyVUlpG7JekLvd4a1wt9ksJYOAvRtO3DjFA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:03:58 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:03:58 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 120ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:05:19 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.5ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 128ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:05:28 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RahN1NpF7QqZUdNH0dxlL1iQitJkxFHoLAVEELTzeBlQHp26tvHngR2Us986X1r6jF25Tn/t5sVgzlh/FqhCYA==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-02-02 15:05:28', `last_sign_in_at` = '2018-02-02 14:58:08', `sign_in_count` = 5, `updated_at` = '2018-02-02 15:05:28' WHERE `users`.`id` = 1[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 246ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:05:28 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (3.5ms)
+Completed 200 OK in 104ms (Views: 97.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:05:58 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+Completed 200 OK in 126ms (Views: 115.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:06:02 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TfC6MzOyVPTE6W+OrPsbvyd0B1RdJ9BdpyGwbnFT8pszNQdrHVpQ/duLN0fEqAodeK/cMR//uYOvEk64IpWC+w=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:06:02 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:06:02 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.5ms)
+  Rendered shared/_navbar.html.erb (4.6ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:06:19 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u12e8/W39P8qyVH08mnmt4EP96mCapXEuxISbDM61kgiqB5tbPMBx55e3SbP2vQDwZvGN/IYglyz6EHLZYAmAA==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-02-02 15:06:19', `last_sign_in_at` = '2018-02-02 15:05:28', `sign_in_count` = 6, `updated_at` = '2018-02-02 15:06:19' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 228ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:06:19 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+Completed 200 OK in 91ms (Views: 84.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:06:55 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (11.4ms)
+Completed 200 OK in 95ms (Views: 88.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:06:58 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FCh0Jnb+lGmEilS31kpHS85ZgtZUaZhK4yMLpRTk+r6WPj5ywuCwsRC2OqnslA1SUS2onApQ1kE4eUIapcXUOQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:06:58 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:06:58 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.5ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+Completed 200 OK in 110ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:07:39 +0100
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (744.1ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 1044ms (Views: 931.6ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:07:46 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tg6aeQaedpkcCFljurWbwptc3nAjizE38IieGyWFQl78Mzvu83KN/UECJtxSHt9u0vbLvmRDXjjgBYHe38vX3A==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-02-02 15:07:46', `last_sign_in_at` = '2018-02-02 15:06:19', `sign_in_count` = 7, `updated_at` = '2018-02-02 15:07:46' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:07:46 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+Completed 200 OK in 137ms (Views: 129.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:10:19 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (5.6ms)
+Completed 200 OK in 232ms (Views: 128.0ms | ActiveRecord: 2.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:10:22 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qAqVVYQvRTm9Qb7d2n3kqbsUxKT2Y5S9Bp9FODlESAKo8gKXPvTUdyuOvpmoBaO+vtQDuLAJ74m9kdf2fRK4/w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:10:22 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:10:22 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.4ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 163ms (Views: 160.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:11:40 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.7ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 157ms (Views: 101.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:11:46 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sJotAopBEb/d2kBH0mJc5YOQd2DFwyWTM9k0BqMcE4x1g+qJjXhLz5NjzNm/4OKgR/EDMGoZdz7+4NsFqVCMFg==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-02-02 15:11:46', `last_sign_in_at` = '2018-02-02 15:07:46', `sign_in_count` = 8, `updated_at` = '2018-02-02 15:11:46' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 245ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:11:46 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (3.6ms)
+Completed 200 OK in 85ms (Views: 78.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:12:34 +0100
+
+SyntaxError - syntax error, unexpected tCONSTANT, expecting keyword_when
+      Rails.logger.debug(level)
+           ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:6: syntax error, unexpected keyword_when, expecting keyword_end
+      when "notice" then "alert alert-pr
+          ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:6: syntax error, unexpected keyword_then, expecting keyword_end
+      when "notice" then "alert alert-primary"
+                        ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:7: syntax error, unexpected keyword_when, expecting keyword_end
+      when "success" then "alert alert-s
+          ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:7: syntax error, unexpected keyword_then, expecting keyword_end
+      when "success" then "alert alert-success"
+                         ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:8: syntax error, unexpected keyword_when, expecting keyword_end
+      when "error" then "alert alert-err
+          ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:8: syntax error, unexpected keyword_then, expecting keyword_end
+      when "error" then "alert alert-error"
+                       ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:9: syntax error, unexpected keyword_when, expecting keyword_end
+      when "alert" then "alert alert-err
+          ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:9: syntax error, unexpected keyword_then, expecting keyword_end
+      when "alert" then "alert alert-error"
+                       ^
+/Users/marco/mgblog/app/helpers/application_helper.rb:42: syntax error, unexpected keyword_end, expecting end-of-input:
+  app/helpers/application_helper.rb:5:in `'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/320eaaf348e3119f/variables" for 127.0.0.1 at 2018-02-02 16:12:35 +0100
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:14:01 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MEQg1qYQVIrQ7pS4pzQmr8FYAa4feedtREpS/xqA+tKNdUAADjYA3wiJO/q9QvH3joSQq/AmceN8PjdJlfeKzQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 58ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:14:02 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:14:02 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+alert
+Completed 200 OK in 122ms (Views: 120.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:14:10 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DPjLKXiMcMbUT6MgfJR7Ml54/gdlzPNUcjxwxXbiAT6t0PawvoPyWIgi+ma98r7d9OZG7/eBX5REW8TLuay8Tg==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-02-02 15:14:10', `last_sign_in_at` = '2018-02-02 15:11:46', `sign_in_count` = 9, `updated_at` = '2018-02-02 15:14:10' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 252ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:14:10 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+notice
+Completed 200 OK in 92ms (Views: 85.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:15:10 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SMKZ0/1n2quJrFdRB09U0yPqud06VGC0WMhxZ43nzyQPBmpjphbiny6rBtJbpL6XitX64uh4rkmnB67FSpIubA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 79ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:15:11 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:15:11 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+alert
+Completed 200 OK in 150ms (Views: 148.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:15:18 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3bIlzDck3G/zRdLHTKj8CQgjBOK1FAc2mUQ85UA9AW99p3cD6WKGw37scmVoGDL7TyymAeMB7Y+lrKpyXW9iSQ==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 202ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3bIlzDck3G/zRdLHTKj8CQgjBOK1FAc2mUQ85UA9AW99p3cD6WKGw37scmVoGDL7TyymAeMB7Y+lrKpyXW9iSQ==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.7ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+alert
+Completed 200 OK in 342ms (Views: 143.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:15:23 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/M90Rn68ysLuO5KxjjO4BISqGGw16Qiq/i5O9/YNkOBc2iaJoPqQbmOSMhOqg3b2w6W6j2P84hPCxthg61/zxg==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'marco.galanti@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `users` SET `current_sign_in_at` = '2018-02-02 15:15:23', `last_sign_in_at` = '2018-02-02 15:14:10', `sign_in_count` = 10, `updated_at` = '2018-02-02 15:15:23' WHERE `users`.`id` = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 250ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:15:23 +0100
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+notice
+Completed 200 OK in 106ms (Views: 92.5ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-02-02 16:18:05 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yNNQ4wavvOwUNDhGZ7KpNqDPqGHdPDYDSSVpRpdX68WV7sNGh0Bc0U6KEvnSxsPJQVDYZWfLGmtEIIqaITE9uQ=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 68ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 16:18:06 +0100
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:18:06 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.3ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+alert
+Completed 200 OK in 147ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:18:19 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dDXaDwK+ApHnmRpUrYezjIA5Sp9982adWL0bSnYOrc6G2D1S+zGHVpBbIdEqstIDih4fvXI9oAIG7HdabWouSw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dDXaDwK+ApHnmRpUrYezjIA5Sp9982adWL0bSnYOrc6G2D1S+zGHVpBbIdEqstIDih4fvXI9oAIG7HdabWouSw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.0ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+alert
+Completed 200 OK in 203ms (Views: 200.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:18:20 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zj6WVfirR/JRp4DZbG+gPdvnYw5owIC5lrDFpl8ph6k803EIASTCNSZlu1zrWsGy0cA2LGcORibI4am2RE0ELA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zj6WVfirR/JRp4DZbG+gPdvnYw5owIC5lrDFpl8ph6k803EIASTCNSZlu1zrWsGy0cA2LGcORibI4am2RE0ELA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.5ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+alert
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:18:21 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t/8x2pmMrm+ikKLtX9U73aF08Lclq8LEuxNNQkC6BQdFEtaHYAMrqNVSmWjY4FpSq1OllSplBFvlQiFSW96Ggg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t/8x2pmMrm+ikKLtX9U73aF08Lclq8LEuxNNQkC6BQdFEtaHYAMrqNVSmWjY4FpSq1OllSplBFvlQiFSW96Ggg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.6ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+alert
+Completed 200 OK in 135ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:18:22 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/YsclVmUcR/ZD8BJwTXM8T3BcToR8TvAd61MUvFSmH8PZvvIoBv02K7N+8xGAK1+N+YkGB4//V8p/CBC6jYb+g==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/YsclVmUcR/ZD8BJwTXM8T3BcToR8TvAd61MUvFSmH8PZvvIoBv02K7N+8xGAK1+N+YkGB4//V8p/CBC6jYb+g==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.4ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+alert
+Completed 200 OK in 143ms (Views: 141.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:18:52 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vb0VnRKEQdXTbzHeXSfzwOZOZ67uh4fmAoyF2e79O2NPUPLA6wvEEqStClvaEpJP7GkyjOFJQXlc3enJ9Zm45g==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vb0VnRKEQdXTbzHeXSfzwOZOZ67uh4fmAoyF2e79O2NPUPLA6wvEEqStClvaEpJP7GkyjOFJQXlc3enJ9Zm45g==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (66.9ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+alert
+Completed 200 OK in 304ms (Views: 301.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:19:00 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AyhBzPgEGxXKtdRmpETLtfQADqei9UUpseBvCD/RMlDxxaaRAYue0r137+Mjcao6/idbha07g7bvsQMYJLWx1Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AyhBzPgEGxXKtdRmpETLtfQADqei9UUpseBvCD/RMlDxxaaRAYue0r137+Mjcao6/idbha07g7bvsQMYJLWx1Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+alert
+Completed 200 OK in 176ms (Views: 173.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:19:02 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GDLzo1e9oKatHiUt9CaaNPakPSbQzzixzmAvsPcMQyvq3xT+rjIlYdrcHqhzE/u7/INoBN8B/i6QMUOg7GjArg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GDLzo1e9oKatHiUt9CaaNPakPSbQzzixzmAvsPcMQyvq3xT+rjIlYdrcHqhzE/u7/INoBN8B/i6QMUOg7GjArg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+alert
+Completed 200 OK in 217ms (Views: 215.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:19:02 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/W+F7YwcFbc4sOyOLH7S/iN+JQj0cMeG55kW9+lpPVAPgmKwdZOQcE9y1wurS7NxKVlwKvu+ARm5yHrn8g2+1Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/W+F7YwcFbc4sOyOLH7S/iN+JQj0cMeG55kW9+lpPVAPgmKwdZOQcE9y1wurS7NxKVlwKvu+ARm5yHrn8g2+1Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.9ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+alert
+Completed 200 OK in 207ms (Views: 205.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-02-02 16:19:03 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JkrgxU+un7Mz+9HD0wG1iHhJvkagT8cWu1p79WzSj13UpweYtiEadEQ56kZUNNQHcm7rZK+BAYnlCxfld7YM2A==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JkrgxU+un7Mz+9HD0wG1iHhJvkagT8cWu1p79WzSj13UpweYtiEadEQ56kZUNNQHcm7rZK+BAYnlCxfld7YM2A==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "button"=>""}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.9ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+alert
+Completed 200 OK in 188ms (Views: 186.7ms | ActiveRecord: 0.0ms)
+
+

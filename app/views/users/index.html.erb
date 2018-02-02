@@ -1,17 +1,17 @@
-<h3 id="h3-form">Lista degli utenti</h1>
+<h3>Account list</h3>
 
 <% @page_title="index" %>
 
 <br/>
 
-<table id="table-form", style: "margin-left: 15px;">
-  <thead id="AdminTable">
-    <tr id="AdminTable">
+<table class="table table-sm table-striped table-bordered table-hover" id="table-form", style: "margin-left: 15px;">
+  <thead class="thead-light">
+    <tr>
       <th id="AdminTable"><%=sortable 'email','Email'%></th>
-      <th id="AdminTable"><%=sortable 'last_name','Nome'%></th>
-      <th id="AdminTable"><%=sortable 'group','Ruolo'%></th>
-      <th id="AdminTable"><%=sortable 'admin','Admin?'%></th>
-      <th id="AdminTableTool">Utente</th>
+      <th><%=sortable 'last_name','Last Name'%></th>
+      <th><%=sortable 'group','Group'%></th>
+      <th><%=sortable 'admin','Admin?'%></th>
+      <th><%=sortable 'action','Action'%></th>
     </tr>
   </thead>
 
@@ -19,21 +19,16 @@
     <%= will_paginate @users %>
     <% if @users %>
       <% @users.each do |user| %>
-        <tr id="AdminTable" class="<%= cycle("odd","even")%>">
-          <td id="AdminTable"><%= user.email if user.email %></td>
-          <td id="AdminTable"><%= user.full_name if user.full_name%></td>
-          <td id="AdminTable"><%= user.group if user.group %></td>
-          <%# if user.approved.class.to_s == "TrueClass" %>
-            <!--td id="AdminTable"><%#= image_tag "true.png", size: "15x15", alt: "yes" %></td>-->
-          <%# else %>
-            <!--td id="AdminTable"><%#= image_tag "false.png", size: "15x15", alt: "no" %></td>-->
-          <%# end %>
+        <tr>
+          <td><%= user.email if user.email %></td>
+          <td><%= user.full_name if user.full_name%></td>
+          <td><%= user.group if user.group %></td>
           <% if user.group == "admin" %>
-            <td id="AdminTable"><%= image_tag "true.png", size: "15x15", alt: "yes" %></td>
+            <td><%= image_tag "true.png", size: "15x15", alt: "yes" %></td>
           <% else %>
-            <td id="AdminTable"><%= image_tag "false.png", size: "15x15", alt: "no" %></td>
+            <td><%= image_tag "false.png", size: "15x15", alt: "no" %></td>
           <% end %>
-          <td id="AdminTable"><%= link_to raw("<span class=\'glyphicon glyphicon-pencil\'"), edit_user_path(user), class: "btn btn-info btn-sm", "data-toggle": "tooltip",title: "Modifica utente #{user.email}","data-placement":"bottom" %></td>
+          <td><%= link_to raw("<span class=\'glyphicon glyphicon-pencil\'"), edit_user_path(user), class: "btn btn-info btn-sm", "data-toggle": "tooltip",title: "Modifica utente #{user.email}","data-placement":"bottom" %></td>
         </tr>
       <% end %>
     <% else%>

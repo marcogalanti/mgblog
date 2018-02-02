@@ -1,4 +1,16 @@
 module ApplicationHelper
+
+  def flash_class(level)
+    Rails.logger.debug(level)
+    case level
+      when "notice" then "alert alert-primary"
+      when "success" then "alert alert-success"
+      when "error" then "alert alert-danger"
+      when "alert" then "alert alert-danger"
+
+    end
+  end
+
   def sortable(column, title = nil)
     title ||= column.titleize
     direction = (column == params[:sort] && params[:direction] == "asc") ? "desc" : "asc"
