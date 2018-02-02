@@ -15,7 +15,7 @@ Rails.application.configure do
   config.action_controller.perform_caching = true
 
   # set the relative root, because we're deploying to /mgblog
-  config.action_controller.relative_url_root  = "/"
+  #config.action_controller.relative_url_root  = "/"
 
   # Attempt to read encrypted secrets from `config/secrets.yml.enc`.
   # Requires an encryption key in `ENV["RAILS_MASTER_KEY"]` or
