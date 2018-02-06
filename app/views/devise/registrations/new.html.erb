@@ -10,14 +10,13 @@
       <%= devise_error_messages! %>
       <br />
       <div id="devise"><%= f.email_field :email, :autofocus => true, id: "devise_field", label: "Email" %></div>
-      <div id="devise"><%= f.text_field :first_name, :autofocus => true, id: "devise_field", label: "Nome" %></div>
-      <div id="devise"><%= f.text_field :middle_name, :autofocus => true, id: "devise_field", label: "Secondo nome" %></div>
-      <div id="devise"><%= f.text_field :last_name, :autofocus => true, id: "devise_field", label: "Cognome" %></div>
-      <div id="devise"><%#= f.select :country_id, Country.all.map {|c| [ c.name.humanize, c.id]}%></div>
-      <div id="devise"><%#= f.select :role, ['manager','presenter'],:prompt=>"Select your role" %></div>
+      <div id="devise"><%= f.text_field :first_name, :autofocus => true, id: "devise_field", label: "First name" %></div>
+      <div id="devise"><%= f.text_field :middle_name, :autofocus => true, id: "devise_field", label: "Middle name nome" %></div>
+      <div id="devise"><%= f.text_field :last_name, :autofocus => true, id: "devise_field", label: "Last name" %></div>
+      <div id="devise"><%#= f.select :group, :prompt=>"Select group" %></div>
       <div id="devise"><%= f.password_field :password, id: "devise_field" %></div>
-      <div id="devise"><%= f.password_field :password_confirmation, id: "devise_field", label: "Conferma password" %></div>
-      <div id="devise"><%= f.submit :submit , value: "Registrazione", class: "btn btn-success btn-block", id: "devise_button", label: "Accedi" %></div>
+      <div id="devise"><%= f.password_field :password_confirmation, id: "devise_field", label: "Password confirmation" %></div>
+      <div id="devise"><%= f.button  "Create", value: "Create account", class: "btn btn-success btn-block", id: "devise_button", label: "Create", method: 'post', data: {disable_with: "<i class='fa fa-spinner></i>Creating..."} %></div>
       <br/>
     <% end %>
 

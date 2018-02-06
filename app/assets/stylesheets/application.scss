@@ -11,7 +11,23 @@
  * It is generally better to create a new file per style scope.
  *
  */
+ 
 @import "font-awesome";
 @import "bootstrap";
+@import "open-iconic-bootstrap";
+
 $body-bg: #fafafa;
-$body-color: #111;
+$body-color: #000;
+$link-color: #444;
+$MGblue: #3191e0;
+
+a {
+  color: $MGblue;
+  &:hover {
+    color: darken($link-color,.3);
+  }
+}
+
+.navbar {
+  background-color: $MGblue;
+}
