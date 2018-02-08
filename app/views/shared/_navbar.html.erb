@@ -34,6 +34,7 @@
     <% if current_user and current_user.admin? %>
 
       <a class="nav-link">Logged as: <%= current_user.first_name%></a>
+      <%= image_tag attachment_url(urrent_user, :profile_image, :fill, 300, 300, format: "jpg") if current_user.profile_image  %>
       <%= link_to "edit", edit_user_registration_path(current_user),  "data-toggle" => "tooltip", title: "modifica il profilo utente", class:"hidden-xs" %>
       <a class="nav-link"></a>
       <%= link_to "esci",users_sign_out_path, :method => 'delete', class: "glyphicon glyphicon-off hidden-xs","data-toggle" => "tooltip",title: "esci","data-placement" => "top" %>

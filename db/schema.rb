@@ -10,15 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180203003811) do
+ActiveRecord::Schema.define(version: 20180207211104) do
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "first_name", default: "", null: false
     t.string "last_name", default: "", null: false
     t.string "middle_name", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.binary "picture"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -37,10 +36,10 @@ ActiveRecord::Schema.define(version: 20180203003811) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "group", default: "", null: false
-    t.string "avatar_file_name"
-    t.string "avatar_content_type"
-    t.integer "avatar_file_size"
-    t.datetime "avatar_updated_at"
+    t.string "profile_image_id"
+    t.string "profile_image_filename"
+    t.string "profile_image_content_size"
+    t.string "profile_image_content_type"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

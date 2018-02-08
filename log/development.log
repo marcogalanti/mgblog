@@ -2721,3 +2721,210 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 3098ms (Views: 1203.3ms | ActiveRecord: 1585.4ms)
 
 
+  [1m[35m (18.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT GET_LOCK(7349057782900118250, 0)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddAvatarColumnsToUsers (20180203003811)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK(7349057782900118250)[0m
+  [1m[35m (29.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK(7349057782900118250, 0)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddAvatarColumnsToUsers (20180203003811)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK(7349057782900118250)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK(7349057782900118250, 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddAvatarColumnsToUsers (20180203003811)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180203003811')[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveAvatarColumnsToUsers (20180206235802)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT RELEASE_LOCK(7349057782900118250)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK(7349057782900118250, 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to RemoveAvatarColumnsToUsers (20180206235802)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(7349057782900118250)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT GET_LOCK(7349057782900118250, 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to RemoveAvatarColumnsToUsers (20180206235802)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180206235802')[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemovePictureFromUsers (20180207210516)
+  [1m[35m (377.3ms)[0m  [1m[35mALTER TABLE `users` DROP `picture`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180207210516')[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK(7349057782900118250)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK(7349057782900118250, 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddProfileImageToUsers (20180207211104)
+  [1m[35m (241.3ms)[0m  [1m[35mALTER TABLE `users` ADD `profile_image_id` varchar(255)[0m
+  [1m[35m (218.8ms)[0m  [1m[35mALTER TABLE `users` ADD `profile_image_filename` varchar(255)[0m
+  [1m[35m (242.2ms)[0m  [1m[35mALTER TABLE `users` ADD `profile_image_content_size` varchar(255)[0m
+  [1m[35m (214.1ms)[0m  [1m[35mALTER TABLE `users` ADD `profile_image_content_type` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20180207211104')[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(7349057782900118250)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 192.168.3.1 at 2018-02-07 22:27:52 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (5.2ms)
+Completed 401 Unauthorized in 4021ms (ActiveRecord: 5.0ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    34:     <% if current_user and current_user.admin? %>
+    35: 
+    36:       <a class="nav-link">Logged as: <%= current_user.first_name%></a>
+    37:       <%= image_tag attachment_url(current_user, :profile_image, :fill, 300, 300, format: "jpg") %>
+    38:       <%= link_to "edit", edit_user_registration_path(current_user),  "data-toggle" => "tooltip", title: "modifica il profilo utente", class:"hidden-xs" %>
+    39:       <a class="nav-link"></a>
+    40:       <%= link_to "esci",users_sign_out_path, :method => 'delete', class: "glyphicon glyphicon-off hidden-xs","data-toggle" => "tooltip",title: "esci","data-placement" => "top" %>
+  
+app/views/shared/_navbar.html.erb:37:in `_app_views_shared__navbar_html_erb___3348847369414589050_70117457801760'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__2045177487192293222_47033980563080'
+Started GET "/" for 192.168.3.1 at 2018-02-07 22:30:10 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit.1" for 192.168.3.1 at 2018-02-07 22:30:18 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (24.1ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/edit.1" for 192.168.3.1 at 2018-02-07 22:33:09 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (12.1ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 65ms (Views: 60.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/attachments/cache" for 192.168.3.1 at 2018-02-07 22:34:41 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile: POST /cache
+Refile: uploading to cache backend which is of type Refile::Backend::FileSystem
+Started PUT "/users" for 192.168.3.1 at 2018-02-07 22:34:46 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HeHOEviFlns9TlNOUAhO+bGSGCKCRavXQS8G0dWVnCGy5q6pXlJBmmWEKNpqVHTedi2D53d/51vbwZiFxL5FoA==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "profile_image_cache_id"=>"368f3d93e0f75c87bf5cca3506568295ec90beaac2bce545d7d312a3365e"}, "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Unpermitted parameter: :profile_image_cache_id
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.8ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 214ms (Views: 49.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/attachments/cache" for 192.168.3.1 at 2018-02-07 22:38:41 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile: POST /cache
+Refile: uploading to cache backend which is of type Refile::Backend::FileSystem
+Started PUT "/users" for 192.168.3.1 at 2018-02-07 22:38:45 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CglF/gJ/jm2Gs3csIsQQ4qnbnXdO+vmDo/SJ6k8zYuylDiVFpKhZjN55DLgYmCrFbmQGsrvAtQ85Ghe+Xhi7bQ==", "user"=>{"email"=>"marco.galanti@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "profile_image_cache_id"=>"98b193c43e40e45a9bbe31afe9ea2b88bf31d2bd5afef7fe07a7057e49f2"}, "button"=>""}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Unpermitted parameter: :profile_image_cache_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (8.0ms)[0m  [1m[33mUPDATE `users` SET `encrypted_password` = '$2a$11$W/WKF46lAVejNZ6CWXIM3uzHQcnKRroXqzMf.bayUK9xVR8n4IP2.', `updated_at` = '2018-02-07 21:38:45' WHERE `users`.`id` = 1[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://192.168.3.100:3001/
+Completed 302 Found in 285ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/" for 192.168.3.1 at 2018-02-07 22:38:45 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+notice
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 192.168.3.1 at 2018-02-07 22:38:54 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (8.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY last_name asc LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (14.7ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 54ms (Views: 39.0ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/users/1/edit" for 192.168.3.1 at 2018-02-07 22:38:58 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (8.1ms)
+  Rendered users/edit.html.erb within layouts/application (9.7ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 53ms (Views: 47.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/edit.1" for 192.168.3.1 at 2018-02-07 22:39:04 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (12.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 62ms (Views: 54.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/edit" for 192.168.3.1 at 2018-02-07 22:40:08 +0100
+Cannot render console from 192.168.3.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.2ms)
+  Rendered users/edit.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 82ms (Views: 74.1ms | ActiveRecord: 1.4ms)
+
+

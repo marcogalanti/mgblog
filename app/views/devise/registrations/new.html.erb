@@ -16,6 +16,7 @@
       <div id="devise"><%#= f.select :group, :prompt=>"Select group" %></div>
       <div id="devise"><%= f.password_field :password, id: "devise_field" %></div>
       <div id="devise"><%= f.password_field :password_confirmation, id: "devise_field", label: "Password confirmation" %></div>
+      <div id="devise"><%= f.attachment_field :profile_image, direct: true %></div>
       <div id="devise"><%= f.button  "Create", value: "Create account", class: "btn btn-success btn-block", id: "devise_button", label: "Create", method: 'post', data: {disable_with: "<i class='fa fa-spinner></i>Creating..."} %></div>
       <br/>
     <% end %>
