@@ -82,14 +82,14 @@ class UsersController < ApplicationController
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) do |u|
-    u.permit(:first_name, :middle_name, :last_name, :email, :password, :password_confirmation)
+    u.permit(:profile_image_cache_id, :profile_image, :first_name, :middle_name, :last_name, :email, :password, :password_confirmation)
     end
     devise_parameter_sanitizer.for(:account_update) do |u|
-      u.permit(:first_name, :middle_name, :last_name, :email, :password, :password_confirmation)
+      u.permit(:profile_image_cache_id, :profile_image, :first_name, :middle_name, :last_name, :email, :password, :password_confirmation)
     end
   end
   def resource_params
-    devise_parameter_sanitizer.for(:sign_up) {|user| user.permit(:profile_image, :first_name, :middle_name, :last_name, :email, :password, :password_confirmation)}
+    devise_parameter_sanitizer.for(:sign_up) {|user| user.permit(:profile_image_cache_id, :profile_image, :first_name, :middle_name, :last_name, :email, :password, :password_confirmation)}
   end
 
 end

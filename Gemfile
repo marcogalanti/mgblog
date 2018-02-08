@@ -65,7 +65,7 @@ gem 'seed_dump'
 gem 'i18n'
 gem 'rb-readline'
 gem 'devise'
-gem 'refile', require: 'refile/rails'
+gem 'refile', require: ['refile/rails', 'refile/image_processing']
 gem 'mini_magick'
 gem 'exception_notification'
 gem 'therubyracer'
